@@ -23,7 +23,7 @@ docker build -f Dockerfile -t urbit .
 This will take 15-20 minutes and give you a working urbit docker image, viewable with 
 docker images
 
-Comet
+Comet - 
 I don't have an urbit planet and I want to connect to the urbit network.  
 
 docker run -ti -p 127.0.0.1:8080:80 -v ${PWD}:/urbit/ships urbit -c testcomet
@@ -35,12 +35,12 @@ https://urbit.org/using/install/#using-landscape
 To exit your docker shell and return to your local system shell:  
 ctrl-d
 
-Fake Ship 
+Fake Ship - 
 I just want to test out the urbit OS locally. 
 docker run -ti -p 127.0.0.1:8080:80 -v ${PWD}:/urbit/ships urbit -c fakezod
 Make sure not to type anything in to the shell while this is running as this can cause errors.  Takes 20-30 minutes.  
 
-I already have a pier.  
+I already have a pier - 
 
 docker run -ti -p 127.0.0.1:8080:80 -v ${PWD}:/urbit/ships urbit SHIPFOLDERNAME
 Restarts your ship from where it left off.  
